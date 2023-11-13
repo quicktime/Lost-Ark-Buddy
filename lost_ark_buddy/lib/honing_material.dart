@@ -23,7 +23,7 @@ HoningMaterial marvelousLeapstone = HoningMaterial(
     id: 'marvelous-honor-leapstone-3', name: 'Marvelous Honor Leapstone');
 
 HoningMaterial superiorOrehaFusionMaterial = HoningMaterial(
-    id: 'superior-oreha-fusion-material-4',
+    id: 'superior-oreha-fusion-material-3',
     name: 'Superior Oreha Fusion Material');
 
 HoningMaterial honorShards =

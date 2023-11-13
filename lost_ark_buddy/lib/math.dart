@@ -12,13 +12,13 @@ int averageHones(double basicSuccessRate) {
   var successRate = basicSuccessRate;
   var prevCumulativeFailRate = 1 - basicSuccessRate;
 
-  while (cumulativeSuccessRate < .65) {
+  while (cumulativeSuccessRate < .6) {
     successRate =
         min(successRate + basicSuccessRate * 0.1, basicSuccessRate * 2);
     var failRate = 1 - successRate;
     var cumulativeFailRate = prevCumulativeFailRate * failRate;
     prevCumulativeFailRate = cumulativeFailRate;
-    if (failRate < .65) {
+    if (failRate < .6) {
       return counter++;
     }
     cumulativeSuccessRate = 1 - cumulativeFailRate;

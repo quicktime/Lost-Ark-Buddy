@@ -2,6 +2,7 @@ import 'package:lost_ark_buddy/honing_material_mbo.dart';
 
 class Gear {
   Gear({
+    this.upgrade,
     required this.tier,
     required this.type,
     required this.iLevel,
@@ -20,6 +21,7 @@ class Gear {
     required this.shards,
   });
 
+  Gear? upgrade;
   Tier tier;
   Type type;
   int iLevel;
